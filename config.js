@@ -102,6 +102,7 @@ let config = {
                                 wrapLocationEvents: true,
                                 broadcastPastEvents: true, // <= IMPORTANT to see past events
 
+                                fade: false,
                                 coloredBackground: true,
                                 calendars: [
                                         {
