@@ -103,19 +103,24 @@ let config = {
                                 broadcastPastEvents: true, // <= IMPORTANT to see past events
                                 calendars: [
                                         {
-                                                url: "https://calendar.google.com/calendar/ical/joshuaromanick%40gmail.com/private-87c273eec7bb8894be03e0b7aaad6013/basic.ics",
-                                                name: "Joshua Romanick",
-                                                color: "red"
+                                            url: "https://calendar.google.com/calendar/ical/joshuaromanick%40gmail.com/private-87c273eec7bb8894be03e0b7aaad6013/basic.ics",
+                                            name: "Joshua Romanick",
+                                            color: "#669bbc"
                                         },
                                         {
-                                                url: "https://calendar.google.com/calendar/ical/f36b02f2576741a6411fef6917bec41136333a641844f7baa98161d932900cbe%40group.calendar.google.com/private-2094b197f462124e5d46f8e6a132f297/basic.ics",
-                                                name: "Work",
-                                                color: "blue"
+                                            url: "https://calendar.google.com/calendar/ical/d2db08cf6dfdb5a2506ec5b7ede1af250ee4294acbecb12d6dc42c1cf660640b%40group.calendar.google.com/private-be54bb3a170daff8880949d938d1a848/basic.ics",
+                                            name: "Routine",
+                                            color: "#003049"
                                         },
                                         {
-                                                url: "https://files-f1.motorsportcalendars.com/f1-calendar_p1_p2_p3_qualifying_sprint_gp.ics?t=1677718477283",
-                                                name: "F1_Calendar",
-                                                color: "green"
+                                            url: "https://calendar.google.com/calendar/ical/f36b02f2576741a6411fef6917bec41136333a641844f7baa98161d932900cbe%40group.calendar.google.com/private-2094b197f462124e5d46f8e6a132f297/basic.ics",
+                                            name: "Work",
+                                            color: "#C1121F"
+                                        },
+                                        {
+                                            url: "https://files-f1.motorsportcalendars.com/f1-calendar_p1_p2_p3_qualifying_sprint_gp.ics?t=1677718477283",
+                                            name: "F1_Calendar",
+                                            color: "#FDF0D5"
                                         },
                                 ]
                         }
