@@ -53,7 +53,7 @@ let config = {
                                 displaySeconds: false,
                                 showPeriod: false,
 
-                                dateFormat: "dddd",
+                                dateFormat: "dddd, MMMM Do",
                         }
                 },
                 {
