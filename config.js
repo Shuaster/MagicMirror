@@ -133,20 +133,38 @@ let config = {
                         }
                 },
                 {
-                        module: "MMM-CalendarExt3",
-                        position: "bottom_bar",
-                        title: "",
-                        config: {
-                                mode: "week",
-                                instanceId: "weeklyCalendar",
-                                weekIndex: "0",
-                                weeksInView: "2",
-                                maxEventLines: 5,
-                                firstDayOfWeek: 1,
-                                displayEndTime: "true",
-                                useWeather: "false",
-                        }
-                },
+                    module: 'MMM-GoogleTrafficTimes',
+                    position: 'top_left',
+                    config: {
+                        key: 'API KEY',
+                        origin: {
+                            address: '43.627027,-79.650962',
+                            addressFormat: 'coordinates',
+                        },
+                        destinations: [{
+                                name: 'Work',
+                                address: '43.540234,-79.707105',
+                                addressFormat: 'coordinates',
+                                mode: 'drive',
+                                avoidHighways: false,
+                                avoidTolls: false,
+                                schedules: [],
+                                showDestinationOutsideScheduleWithoutTraffic: true
+                            },
+                        ],
+                        updateInterval: 900000,
+                        avoidHighways: false,
+                        avoidTolls: false,
+                        avoidFerries: false,
+                        mode: 'drive',
+                        language: 'en-EN',
+                        offsetTimePercentage: 25,
+                        lastUpdate: true,
+                        timeLastUpdateWarning: 1,
+                        horizontalLayout: false,
+                        debug: false
+                    }
+                }
         ]
 };
 
