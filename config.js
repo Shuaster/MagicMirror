@@ -133,38 +133,24 @@ let config = {
                         }
                 },
                 {
-                    module: 'MMM-GoogleTrafficTimes',
-                    position: 'top_left',
+                    module: "MMM-TomTomCalculateRouteTraffic",
+                    position: "top_left",
+                    header: "Traffic",
                     config: {
-                        key: 'API KEY',
-                        origin: {
-                            address: '43.627027,-79.650962',
-                            addressFormat: 'coordinates',
-                        },
-                        destinations: [{
-                                name: 'Work',
-                                address: '43.540234,-79.707105',
-                                addressFormat: 'coordinates',
-                                mode: 'drive',
-                                avoidHighways: false,
-                                avoidTolls: false,
-                                schedules: [],
-                                showDestinationOutsideScheduleWithoutTraffic: true
-                            },
-                        ],
-                        updateInterval: 900000,
-                        avoidHighways: false,
-                        avoidTolls: false,
-                        avoidFerries: false,
-                        mode: 'drive',
-                        language: 'en-EN',
-                        offsetTimePercentage: 25,
-                        lastUpdate: true,
-                        timeLastUpdateWarning: 1,
-                        horizontalLayout: false,
-                        debug: false
+                        apiTomTomKey: "NAOyQZdYvHMyRoEKrk4yppT0cHOSbP9o",
+                        refresh: (5 * 60 * 1000), // in milliseconds
+                        animationSpeed: 2000, // in milliseconds
+                        size: "medium",
+                        showDelay: true,
+                        routes: [
+                        {
+                            name: "Lifetime Fitness",
+                            symbol: "dumbbell",
+                            from: {latitude: 43.62695809342512, longitude: -79.65087591180031},
+                            to: {latitude: 43.54021822928025, longitude: -79.70712866319862}
+                        },]
                     }
-                }
+                },
         ]
 };
 
